@@ -1,0 +1,452 @@
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* CODE FOR ADAPTIVITY*/
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/*GENERAL STYLES*/
+body {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.wrapper{
+    transition: ease .5s;
+    background: linear-gradient(225.23deg, #FF6922 0%, #6347F5 90.55%);
+}
+
+    header {
+        transition: all .5s;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 4px 10px;
+        /*position: fixed;*/
+        width: 100%;
+        /*background: -webkit-linear-gradient(315deg, rgb(105, 0, 255), rgb(255, 0, 225) 100%);*/
+        /*background: -moz-linear-gradient(315deg, rgb(105, 0, 255), rgb(255, 0, 225) 100%);*/
+        /*background: linear-gradient(315deg, rgb(105, 0, 255), rgb(255, 0, 225) 100%);*/
+        background: transparent;
+    }
+
+    .wrap-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    header a {
+        color: #212121;
+        padding: 6px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 10px;
+        margin: 0 10px;
+    }
+
+    #logo{
+        width: 200px;
+    }
+
+    .header_links{
+        color: white;
+        transition: all .2s;
+    }
+
+    .header_links:hover {
+        background-color: white;
+        color: #212121;
+    }
+
+    .header_links:target {
+        background-color: white;
+        color: black;
+    }
+
+    .header_links:target {
+        color: red;
+    }
+
+    .header_links.active {
+        color: black;
+        background-color: white;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+@media (max-width: 1000px) {
+    header {
+         background: #7f00ff ;
+    }
+
+}
+
+    #aboutAppBlock {
+        height: 100vh;
+        object-fit: cover;
+        background-size: 100%;
+    }
+
+    main .row .col-7 {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    main .row .col-7 p {
+        margin: 0;
+        text-align: left;
+        color: white;
+        margin-left: 40px;
+
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    main .row .col-7 p span:nth-child(1){
+        font-weight: 900;
+
+        font-size: 32px;
+    }
+    main .row .col-7 p span:nth-child(2){
+        font-weight: 100;
+        font-size: 25px;
+    }
+    main .row .col-5 {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    main .row .col-5 img {
+        margin-top: 70px;
+        width: 70%;
+    }
+
+
+/*CODE FOR ABOUT APP BLOCK [MOBILE]*/
+@media (max-width: 1000px){
+    #aboutAppBlock {
+        height: 80vh;
+        /*background-image: url("images/aboutAppBlock/backgroundImageVertical.png");*/
+    }
+    main .row .col-7{
+        height: 30vh;
+    }
+    main .row .col-7 p{
+        text-align: center;
+    }
+    main .row .col-5 {
+        height: 40vh;
+    }
+    main .row .col-5 img{
+        width: 50%;
+    }
+}
+
+
+    #modileAppCard{
+        margin-top: 45px;
+        width: 300px;
+        height: 100px;
+        border: 1px solid #6347F5;
+        border-radius: 10px;
+        transition: all .3s;
+    }
+
+    #mobileAppCardImage{
+        width: 100px;
+        padding: 12px;
+        padding-left: 20px;
+    }
+
+    #modileAppCardText{
+        width: 220px;
+        padding: 10px;
+    }
+
+    #modileAppCardText p:nth-child(1){
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    #modileAppCardText p:nth-child(2){
+        font-size: 40px;
+        margin-top: -15px;
+    }
+
+
+    #modileAppCard:hover{
+        background: #6347F5;
+        transition: all .3s;
+        margin-left: 8px;
+    }
+
+    #modileAppCard:hover #modileAppCardText{
+       color: white;
+    }
+
+
+
+    #howToUseBlock {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding-top: 100px;
+    }
+    #howToUseBlock div{
+        margin: 0;
+        text-align: center;
+    }
+    .howToUseCard{
+        display: inline-block;
+        margin-right: 40px!important;
+    }
+    .howToUseCard p{
+        margin: 20px 0;
+
+        font-size: 20px;
+    }
+
+    .howToUseIcon{
+        background: url("images/howToUse/arrow.png");
+        background-size: cover;
+        width: 265px;
+        height: 150px;
+        display:inline-block;
+        padding-top: 63px;
+        padding-left: 10px;
+    }
+    .howToUseInside i{
+        transform: scale(5);
+    }
+
+
+/*CODE FOR HOW TO USE [MOBILE]*/
+@media (max-width: 1000px){
+    #howToUseBlock {
+        height: 25vh;
+    }
+    .howToUseCard p{
+        margin: 10px 0;
+    }
+}
+
+
+    .howToUseInside i{
+        transform: rotate(0deg) scale(5);
+        transition: all .2s
+    }
+    .howToUseInside:hover i{
+        transform: rotate(20deg) scale(5);
+    }
+
+
+    #advantagesOfApp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #advantagesOfApp div{
+        text-align: center;
+    }
+    #advantagesOfApp .row {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    #advantagesOfApp .row .col{
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    #advantagesOfApp .row .col p{
+        margin:  20px 10px;
+        text-align: left;
+        color: white;
+        width: 400px;
+    }
+    #advantagesOfApp .row .col img{
+        margin:  20px 40px;
+        width: 100px;
+        filter: brightness(300%);
+        transition: all .6s
+    }
+    #advantagesOfApp .row .col img:hover{
+        transform: rotate(360deg);
+    }
+    h2{
+        color: white;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+
+/*CODE FOR ADVANTAGES OF APP[MOBILE]*/
+@media (max-width: 1000px){
+    #advantagesOfApp .row .col p{
+        margin:  20px 10px;
+        text-align: left;
+        color: white;
+        width: 750px;
+    }
+    #advantagesOfApp .row .col img{
+        margin:  20px 40px;
+        width: 100px;
+        filter: brightness(300%);
+        transition: all .6s
+    }
+    #advantagesOfApp .row .col img:hover{
+        transform: rotate(360deg);
+    }
+    h2{
+        color: white;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    .footer{
+        background: rgba(245, 237, 237, 0.8);
+        padding: 40px 0 40px 300px;
+        color: #6347F5;
+    }
+    .footer-col:nth-child(1){
+        width: 30%;
+        margin-right: 150px;
+    }
+    .footer-col{
+        width: 20%;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background: linear-gradient(225.23deg, #985be3 50%, #6347F5 90.55%);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-links{
+        font-size: 16px;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        color: #6347F5;
+        transition: all 0.3s ease;
+    }
+    .footer-links:hover{
+        color: #210FB7;
+        padding-left: 8px;
+        cursor: pointer;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+    }
+    .footer-col .social-links a img{
+        width: 30px;
+        margin-left: -5px;
+    }
+    .footer-col .social-links a:hover{
+        background-color: #ffffff;
+    }
+
+    /*responsive*/
+    @media(max-width: 1000px){
+        .footer-col:nth-child(1){
+
+            margin-right: 200px;
+        }
+        .footer{
+            padding: 40px 0 40px 0;
+        }
+        .footer-col{
+            width: 20%;
+            margin-bottom: 30px;
+        }
+    }
+    @media(max-width: 574px) {
+        .footer-col {
+            width: 100%;
+        }
+    }
+
+
+
+    ::-webkit-scrollbar {
+        opacity: 0.5;
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track{
+        opacity: 0.5;
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #C0C0C0;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        opacity: 1;
+        background: rgb(105, 0, 255);
+    }
+
+
+.bgDark{
+    background-color: #7f00ff ;
+    transition: all .5s;
+}
+
+.dark-mode .wrapper{
+    transition: ease .5s;
+    background: linear-gradient(187.6deg, #000000 6.34%, #050084 94.57%);
+}
+.dark-mode .footer{
+    background: rgba(33, 15, 183, 0.5);
+    color: #fff;!important;
+}
+
+.dark-mode .footer-links{
+    color: white!important;
+}

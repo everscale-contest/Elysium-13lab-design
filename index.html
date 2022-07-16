@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bölek - приложение для оплаты транспорта через ваш баланс телефона</title>
+
+<!--     CSS (load bootstrap from a CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!--    FONT AWESOME 4.0-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--    STYLES-->
+    <link rel="stylesheet" href="style.css">
+
+<!--    JQUERY-->
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<!--HEADER-->
+<header id="header">
+    <div class="wrap-logo">
+        <a href="#logo" class="logo">
+            <img id="logo" src="images/icons/qurie%20black.png" alt="">
+        </a>
+    </div>
+    <nav>
+        <a class="header_links" href="#aboutAppBlock">aboutAppBlock</a>
+        <a class="header_links" href="#howToUseBlock">howToUseBlock</a>
+        <a class="header_links" href="#advantagesOfApp">advantagesOfApp</a>
+        <a class="header_links" href="#" onclick="themeToggle()">Change theme</a>
+    </nav>
+</header>
+
+
+<!--ABOUT APP BLOCK-->
+<main id="aboutAppBlock" class="container-fluid">
+    <div class="row">
+        <div class="col-7">
+            <p>
+                <span >Lorem ipsum dolor sit amet </span><br>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In purus arcu, aliquet id tempor id, sagittis a nulla. Fusce erat metus, cursus in odio in, finibus condimentum massa. Pellentesque tellus justo, aliquet a quam nec, hendrerit posuere mi. Integer ornare ex at mi congue cursus. Ut cursus ullamcorper augue, vel facilisis mi sagittis eget. Donec congue pellentesque ipsum, sit amet aliquam justo semper vel. Mauris in libero consectetur, mattis quam vel, dictum nisl. Aenean pulvinar ante id felis egestas, id dapibus justo semper. Curabitur tempor, arcu sed bibendum aliquam, tortor nulla pellentesque felis, id fermentum elit nulla non purus. Pellentesque ultricies imperdiet mi vitae molestie. In vitae efficitur urna. Curabitur dapibus dictum mi sed viverra. Suspendisse id massa et nisl blandit eleifend. Suspendisse consectetur ipsum nec fringilla imperdiet. Cras et leo risus. Vivamus bibendum sed nulla eget feugiat.
+
+                    </span>
+            </p>
+        </div>
+        <div class="col-5">
+            <img src="images/aboutAppBlock/modileAppScreenshots" alt="mob img">
+        </div>
+    </div>
+</main>
+
+
+    <!--HOW TO USE BLOCK-->
+    <section id="howToUseBlock" class="container-fluid">
+        <div>
+            <div class="howToUseCard">
+                <p>Установите приложение</p>
+                <div class="howToUseIcon">
+                    <div class="howToUseInside">
+                        <i class="fa fa-android"></i>
+                    </div>
+                </div>
+                <p>Шаг1</p>
+            </div>
+            <div class="howToUseCard">
+                <p>Войдите через ваш номер</p>
+                <div class="howToUseIcon">
+                    <div class="howToUseInside">
+                        <i class="fa fa-sign-in"></i>
+                    </div>
+                </div>
+                <p>Шаг2</p>
+            </div>
+            <div class="howToUseCard">
+                <p>Отсканируйте QR код</p>
+                <div class="howToUseIcon">
+                    <div class="howToUseInside">
+                        <i class="fa fa-qrcode"></i>
+                    </div>
+                </div>
+                <p>Шаг3</p>
+            </div>
+            <div class="howToUseCard">
+                <p>Подтвердите платеж</p>
+                <div class="howToUseIcon">
+                    <div class="howToUseInside">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+                </div>
+                <p>Шаг4</p>
+            </div>
+
+        </div>
+    </section>
+        <br><br>
+    <!--ADVANTAGES OF APP -->
+    <h2>Преимущества использования нашего сервиса</h2>
+    <section id="advantagesOfApp" class="container">
+        <div class="row row-cols-2 text-center">
+            <div class="col">
+                <img src="images/advantagesOfApp/firstPic.png" >
+                <p>100% Надежность и контроль безопасности кошелька, защищены операционные системы, серверы приложений.</p>
+            </div>
+            <div class="col">
+                <img src="images/advantagesOfApp/secondPic.png" >
+                <p>Не нужно заполнять никаких лишних данных и документов платить налоги. Всё, что нужно при регистрации - ваш номер телефона.</p>
+            </div>
+            <div class="col">
+                <img src="images/advantagesOfApp/thirdPic.png" >
+                <p>Подробная аналитика ваших расходов с вашего баланса телефона. Вести финансы в нашем приложении - невероятно удобно.</p>
+            </div>
+            <div class="col">
+                <img src="images/advantagesOfApp/fourthPic.png" >
+                <p>Нет комиссии. Оплачивайте проезд в любом автобусе вашего города без каких-либо процентов</p>
+            </div>
+        </div>
+    </section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col" >
+                <h4>Download the app</h4>
+                    <div id="modileAppCard">
+                        <div class="row">
+                            <div id="mobileAppCardImage">
+                                <img src="images/downloadModileAppBlock/icon.png" style="width: 75px">
+                            </div>
+                            <div id="modileAppCardText">
+                                <p>Available only on</p>
+                                <p>Google Play</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer-col">
+                <h4>Creators</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/akzh4n/" class="footer-links">Akzhan</a></li>
+                    <li><a href="https://www.instagram.com/lagmazavr/" class="footer-links">Zaur</a></li>
+                    <li><a href="https://www.instagram.com/arinakantayeva/" class="footer-links">Arina</a></li>
+                    <li><a href="https://www.instagram.com/tikosch/" class="footer-links" >Tairzhan</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a>
+                        <img src="images/icons/tg.png" alt="">
+                    </a><br>
+                    <a><i class="fa fa-twitter"></i></a><br>
+                    <a><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
