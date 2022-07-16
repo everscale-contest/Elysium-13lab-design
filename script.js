@@ -44,11 +44,13 @@ function themeToggle() {
     let theme = localStorage.getItem("theme");
     if (theme && theme === "dark-mode") {
         localStorage.setItem("theme", "");
-        $('#favicon').attr('href', 'https://i.ibb.co/rs5z9tz/light-icon.png');
+        $('#favicon').attr('href', 'https://i.ibb.co/tK153CM/qurie-black.png');
+        $('#logo').attr('src', 'https://i.ibb.co/tK153CM/qurie-black.png');
         $('body').css('transition', 'ease .5')
     } else {
         localStorage.setItem("theme", "dark-mode");
-        $('#favicon').attr('href', 'https://i.ibb.co/D8r86Dk/light-icon.png');
+        $('#favicon').attr('href', 'https://i.ibb.co/gt7CznF/qurie-white.png');
+        $('#logo').attr('src', 'https://i.ibb.co/gt7CznF/qurie-white.png');
     }
 
     document.getElementById("theme").textContent = localStorage.getItem("theme");
