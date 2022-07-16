@@ -206,7 +206,7 @@ body {
         align-items: center;
         justify-content: center;
         color: white;
-        padding-top: 100px;
+        /*padding-top: 100px;*/
     }
     #howToUseBlock div{
         margin: 0;
